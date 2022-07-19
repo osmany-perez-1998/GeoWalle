@@ -1,0 +1,6 @@
+﻿circle a;
+circle b;
+circle c;
+circle d;
+e={a,b,c,d};
+draw e ,"circles";

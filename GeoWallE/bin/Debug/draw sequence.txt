@@ -1,0 +1,7 @@
+﻿point a;
+point b;
+point c;
+point d;
+draw {a,b,c,d}, "hello bitches";
+circle c;
+draw c,"this is BS";

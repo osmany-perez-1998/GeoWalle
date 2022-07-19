@@ -1,0 +1,6 @@
+﻿circle a;
+circle d;
+point p;
+draw p;
+draw a;
+draw d;

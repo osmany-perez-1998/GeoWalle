@@ -1,0 +1,6 @@
+﻿point a;
+point b;
+draw {a,b},"gaby esta loca";
+
+m1=measure(a,b);
+draw circle(a,m1);

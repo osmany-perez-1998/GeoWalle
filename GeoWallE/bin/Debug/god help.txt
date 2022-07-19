@@ -1,0 +1,35 @@
+﻿mediatrix(p1, p2) = 
+    let
+        l1 = line(p1, p2);
+        m = measure (p1, p2);
+        c1 = circle (p1, m);
+        c2 = circle (p2, m);
+        i1,i2,_ = intersect(c1, c2);
+    in line(i1,i2);
+regularTriangle(p,m) =
+    let
+        point p2;
+        l1 = line(p,p2);
+        c1 = circle(p,m);
+        i1,i2,_ = intersect(l1,c1);
+        c2 = circle(i1,m);
+        c3 = circle(i2,m);
+        i3,i4,_ = intersect(c2,c1);
+        i5,i6,_ = intersect(c3,c1);
+    in {i1,i5,i6};  
+subTriangles(p1,p2,p3,cant) = 
+if (cant > 0)
+then 
+    let
+      draw {segment(p1,p2),segment(p2,p3),segment(p3,p1)};
+      mid1,_ = intersect(mediatrix(p1,p2),line(p1,p2));
+      mid2,_ = intersect(mediatrix(p2,p3),line(p2,p3));
+      mid3,_ = intersect(mediatrix(p1,p3),line(p1,p3));
+      a = subTriangles(p2,mid2,mid1,cant-1);
+      b = subTriangles(p1,mid1,mid3,cant-1);
+      c = subTriangles(p3,mid2,mid3,cant-1);
+   in 1
+else 1;
+
+i1,i2,i3,_ = regularTriangle(point(0,0),100);
+x = subTriangles(i1,i2,i3,7);

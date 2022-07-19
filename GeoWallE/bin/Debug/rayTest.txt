@@ -1,0 +1,2 @@
+﻿ray a;
+draw a;

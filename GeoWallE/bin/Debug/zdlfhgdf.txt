@@ -1,0 +1,4 @@
+﻿circle a;
+point b;
+draw a;
+draw b;

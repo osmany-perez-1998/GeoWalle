@@ -1,0 +1,4 @@
+﻿point a;
+draw a,"life is good";
+circle b;
+draw b,"this is working";

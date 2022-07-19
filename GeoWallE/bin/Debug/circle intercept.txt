@@ -1,0 +1,4 @@
+﻿circle a;
+circle b;
+p1,p2,_=intersect(a,b);
+draw {a,b};

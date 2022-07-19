@@ -1,0 +1,5 @@
+﻿point a;
+point b;
+draw{ray(a,b)};
+m1=measure(a,b);
+draw{circle(a,m1),circle(b,m1)};

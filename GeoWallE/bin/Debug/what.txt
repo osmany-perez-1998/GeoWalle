@@ -1,0 +1,4 @@
+﻿ray a;
+segment b;
+draw a;
+draw b;

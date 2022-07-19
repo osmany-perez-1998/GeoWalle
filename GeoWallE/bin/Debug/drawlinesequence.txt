@@ -1,0 +1,3 @@
+﻿line a;
+line b;
+draw{a,b},"lines";

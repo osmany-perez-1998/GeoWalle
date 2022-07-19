@@ -1,0 +1,4 @@
+﻿point a;
+point b;
+
+draw segment(a,b);

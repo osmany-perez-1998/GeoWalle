@@ -1,0 +1,3 @@
+﻿point a;
+point b;
+l1= line(a,b);

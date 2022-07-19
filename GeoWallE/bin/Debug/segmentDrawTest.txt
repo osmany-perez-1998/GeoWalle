@@ -1,0 +1,9 @@
+﻿segment a;point b; point c;
+s1= segment(b,c);
+draw{b,c};
+ray z;
+draw z;
+m1= measure(b,c);
+draw {a,s1},"hello my friend";
+circle c2;circle c3;
+draw{circle(b,m1),c2,c3},"bitches";

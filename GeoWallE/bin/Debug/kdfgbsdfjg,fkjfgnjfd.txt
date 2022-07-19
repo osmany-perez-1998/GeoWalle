@@ -1,0 +1,4 @@
+﻿ray z;
+draw z;
+segment a;
+draw a;

@@ -1,0 +1,8 @@
+﻿
+point d;
+point e;
+wasabito(a,b) = segment(a,b); 
+draw wasabito(d,e);
+
+
+

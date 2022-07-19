@@ -1,0 +1,6 @@
+﻿circledrawer(cant)=if(cant>0) then let
+circle a;
+draw a;
+in circledrawer(cant-1) else 1;
+
+c= circledrawer(40);

@@ -1,0 +1,2 @@
+﻿point a;point b;
+s1=segment(a,b);

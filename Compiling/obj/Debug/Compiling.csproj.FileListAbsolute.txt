@@ -1,0 +1,30 @@
+C:\Users\Ludwig\Documents\Visual Studio 2012\Projects\WallEApp\Compiling\bin\Debug\Compiling.dll
+C:\Users\Ludwig\Documents\Visual Studio 2012\Projects\WallEApp\Compiling\bin\Debug\Compiling.pdb
+C:\Users\Ludwig\Documents\Visual Studio 2012\Projects\WallEApp\Compiling\obj\Debug\Compiling.csprojResolveAssemblyReference.cache
+C:\Users\Ludwig\Documents\Visual Studio 2012\Projects\WallEApp\Compiling\obj\Debug\Compiling.dll
+C:\Users\Ludwig\Documents\Visual Studio 2012\Projects\WallEApp\Compiling\obj\Debug\Compiling.pdb
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\Compiling\bin\Debug\Compiling.dll
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\Compiling\bin\Debug\Compiling.pdb
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\Compiling\obj\Debug\Compiling.csprojResolveAssemblyReference.cache
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\Compiling\obj\Debug\Compiling.dll
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\Compiling\obj\Debug\Compiling.pdb
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\GeoWallE Project\Compiling\obj\Debug\Compiling.csprojResolveAssemblyReference.cache
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\GeoWallE Project\Compiling\obj\Debug\Compiling.dll
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\GeoWallE Project\Compiling\obj\Debug\Compiling.pdb
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\GeoWallE Project\Compiling\bin\Debug\Compiling.dll
+C:\Users\lleonart\Documents\!Courses\!Programming\Projects\GeoWallE Project\Compiling\bin\Debug\Compiling.pdb
+D:\!!!!!! 2do Proyecto\Nueva carpeta\GeoWallE\Compiling\bin\Debug\Compiling.dll
+D:\!!!!!! 2do Proyecto\Nueva carpeta\GeoWallE\Compiling\bin\Debug\Compiling.pdb
+D:\!!!!!! 2do Proyecto\Nueva carpeta\GeoWallE\Compiling\obj\Debug\Compiling.csprojResolveAssemblyReference.cache
+D:\!!!!!! 2do Proyecto\Nueva carpeta\GeoWallE\Compiling\obj\Debug\Compiling.dll
+D:\!!!!!! 2do Proyecto\Nueva carpeta\GeoWallE\Compiling\obj\Debug\Compiling.pdb
+D:\!!!!!! 2do Proyecto\Nueva carpeta\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\bin\Debug\Compiling.dll
+D:\!!!!!! 2do Proyecto\Nueva carpeta\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\bin\Debug\Compiling.pdb
+D:\!!!!!! 2do Proyecto\Nueva carpeta\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\obj\Debug\Compiling.csprojResolveAssemblyReference.cache
+D:\!!!!!! 2do Proyecto\Nueva carpeta\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\obj\Debug\Compiling.dll
+D:\!!!!!! 2do Proyecto\Nueva carpeta\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\obj\Debug\Compiling.pdb
+D:\!!!!!! 2do Proyecto\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\obj\Debug\Compiling.csprojResolveAssemblyReference.cache
+D:\!!!!!! 2do Proyecto\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\obj\Debug\Compiling.dll
+D:\!!!!!! 2do Proyecto\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\obj\Debug\Compiling.pdb
+D:\!!!!!! 2do Proyecto\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\bin\Debug\Compiling.dll
+D:\!!!!!! 2do Proyecto\Osmany Perez Rodriguez-C121 GeoWallE\Compiling\bin\Debug\Compiling.pdb

@@ -1,0 +1,8 @@
+﻿point a;
+point b;
+m1= measure(a,b);
+c1= circle(a,m1);
+
+draw {a,b}, "puntos";
+
+draw c1;

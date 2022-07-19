@@ -1,0 +1,5 @@
+﻿point a;
+point b;
+draw segment(a,b);
+m1=measure(a,b);
+draw{circle(a,m1);circle(b,m1)};

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02C31552-29A3-4734-8D4A-9C001BEB8A4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Compiling</RootNamespace>
+    <AssemblyName>Compiling</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASTNode\ASTNode.cs" />
+    <Compile Include="ASTNode\Expression.cs" />
+    <Compile Include="ASTNode\Expression\Constructors\ArcConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperatorNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Arithmetic\DivisionNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\AndNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\EqualNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\LessNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\LessOrEqualNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Arithmetic\SubtractionNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\GreaterNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\GreaterOrEqualNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Arithmetic\MultiplicationNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Arithmetic\AdditionNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\NotEqualNode.cs" />
+    <Compile Include="ASTNode\Expression\BinaryOperator\Boolean\OrNode.cs" />
+    <Compile Include="ASTNode\Expression\Constructors\CircleConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\ConstantNode.cs" />
+    <Compile Include="ASTNode\Expression\FundFunctions\CountNode.cs" />
+    <Compile Include="ASTNode\Expression\FundFunctions\IntersectConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\FundFunctions\MeasureConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\FundFunctions\RandomsConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\FundFunctions\ShapePointsConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\Sequences\FiniteSequenceNode.cs" />
+    <Compile Include="ASTNode\Expression\FunctionCallNode.cs" />
+    <Compile Include="ASTNode\Expression\IfThenElseNode.cs" />
+    <Compile Include="ASTNode\Expression\Sequences\InfiniteSequenceNode.cs" />
+    <Compile Include="ASTNode\Expression\Sequences\IntervalSequenceNode.cs" />
+    <Compile Include="ASTNode\Expression\LetInNode.cs" />
+    <Compile Include="ASTNode\Expression\Constructors\LineConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\Constructors\PointConstructorNode_DO_I_NEED_THIS.cs" />
+    <Compile Include="ASTNode\Expression\Constructors\RayConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\Constructors\SegmentConstructorNode.cs" />
+    <Compile Include="ASTNode\Expression\UnaryOperatorNode.cs" />
+    <Compile Include="ASTNode\Expression\UnaryOperator\MinusUnaryNode.cs" />
+    <Compile Include="ASTNode\Expression\UnaryOperator\NotUnaryNode.cs" />
+    <Compile Include="ASTNode\Expression\UnaryOperator\PlusUnaryOperatorNode.cs" />
+    <Compile Include="ASTNode\Expression\IdNode.cs" />
+    <Compile Include="ASTNode\Program.cs" />
+    <Compile Include="ASTNode\Statement.cs" />
+    <Compile Include="ASTNode\Statement\Declaration\FunctionDeclaration.cs" />
+    <Compile Include="ASTNode\Statement\Declaration\VariableDeclaration.cs" />
+    <Compile Include="ASTNode\Statement\ColourNode.cs" />
+    <Compile Include="ASTNode\Statement\Draw.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\ArcInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\ArcSequenceInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\CircleInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\CircleSequenceInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\LineInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\LineSequenceInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\PointInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\PointSequenceInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\RayInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\RaySequenceInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\SegmentInput.cs" />
+    <Compile Include="ASTNode\Statement\GeoInput\SegmentSequenceInput.cs" />
+    <Compile Include="ASTNode\Statement\Declaration\MatchAssigmentOfSequence.cs" />
+    <Compile Include="ASTNode\Statement\Restore.cs" />
+    <Compile Include="CompilingError.cs" />
+    <Compile Include="INDEPENDENT\Discriminante.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\IPaintable.cs" />
+    <Compile Include="INDEPENDENT\IDrawer.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\Arc.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\BehavesLikeLine.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\Circle.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\BehavesLikeLine\Line.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Measure.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Number.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\GeoPoint.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\BehavesLikeLine\Ray.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Geometry\BehavesLikeLine\Segment.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\SequenceGeneric.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Undefined.cs" />
+    <Compile Include="INDEPENDENT\GeoEntities\Underscore.cs" />
+    <Compile Include="INDEPENDENT\IIntersectable.cs" />
+    <Compile Include="INDEPENDENT\Intercept.cs" />
+    <Compile Include="INDEPENDENT\Operations.cs" />
+    <Compile Include="INDEPENDENT\ScopeCheckSemantic.cs" />
+    <Compile Include="INDEPENDENT\ScopeExecution.cs" />
+    <Compile Include="LexicalAnalysisProcess.cs" />
+    <Compile Include="Parser\IControlParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\ArithmeticParser\AdditionNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\ArithmeticParser\DivisionNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\ArithmeticParser\MinusNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\ArithmeticParser\MultipliNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\BooleanParsers\EqualsNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\BooleanParsers\GreaterNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\BooleanParsers\GreaterOrEqualsNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\BooleanParsers\LessNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\BooleanParsers\LessOrEqualsNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\BooleanParsers\NotEqualNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\Conjuction\AndNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\Conjuction\OrNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IInfixParsers\FunctionCallParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\Constructors\ArcConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\BracketParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\Constructors\CircleConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\Constructors\PointConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\FundFunctions\CountParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\FundFunctions\ShapePointsParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\FundFunctions\IntersectConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\FundFunctions\MeasureConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\FundFunctions\RamdomsParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\Constructors\LineConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\Constructors\RayConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\Constructors\SegmentConstructorParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\SequenceParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\UnaryOperators\MinusUnaryNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\UnaryOperators\PlusUnaryNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\UnaryOperators\NotNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\VariableCallParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\ArcPrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\CirclePrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\IfThenElseParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\LetInParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\ColorParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\FunctionDeclarationParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\LinePrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IPrefixParsers\NumberParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\DrawNodeParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\MatchAssigmentParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\PointPrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\RayPrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\RestoreParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\SegmentPrefixParser.cs" />
+    <Compile Include="Parser\IControlParser\IStatementParsers\VariableDeclarationParser.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Parser\Precedence.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
